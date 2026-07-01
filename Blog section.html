@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Featured Blog Section</title>
+
+<style>
+.blog-section {
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    background:lightgray;
+}
+
+.blog-post {
+    flex: 1;
+    border: 1px solid lightcoral;
+    padding: 15px;
+    background:bisque;
+    text-align: center;
+}
+
+.blog-post img {
+    width: 100%;
+    height: 80%;
+}
+
+a[href^="https"] {
+    color: red;
+    font-weight: bold;
+}
+
+img[src$=".jpg"] {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .blog-section {
+        flex-direction: column;
+    }
+
+    .blog-post {
+        font-size: 14px;
+    }
+}
+
+@media (orientation: portrait) {
+    .blog-section {
+        background-color: lightyellow;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<section class="blog-section">
+    <div class="blog-post">
+        <h2>SUMMER FASHION TRENDS</h2>
+        <img src="https://i.pinimg.com/originals/f0/92/5a/f0925a8e688756eafc9317c4eec7013e.png"width="50px"height="50px">
+        <p>
+            <a href="https://example.com/summer-fashion">Read More</a>
+        </p>
+    </div>
+
+    <div class="blog-post">
+        <h2>STREET STYLE INSPIRATION</h2>
+        <img src="https://womans-dreams.com/wp-content/uploads/2025/11/New-York-style-inspiration-tobi-1.webp"width="20px"height="20px">
+        <p>
+            <a href="http://example.com/street-style">Read More</a>
+        </p>
+    </div>
+
+    <div class="blog-post">
+        <h2>MUST-HAVE ACCESSORIES</h2>
+        <img src="https://tse1.mm.bing.net/th/id/OIP.yhdJuRlNisI01hzxx_Hs5QHaJQ?w=1440&h=1800&rs=1&pid=ImgDetMain&o=7&rm=3"width="50px"height="50px">
+        <p>
+            <a href="https://example.com/fashion-accessories">Read More</a>
+        </p>
+    </div>
+</section>
+
+</body>
+</html>
