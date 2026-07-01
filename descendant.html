@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Descendant Selector</title>
+
+<style>
+
+body{
+    font-family:Arial;
+    margin:0;
+}
+
+.navbar{
+    background:#222;
+    padding:15px;
+}
+
+.navbar ul{
+    list-style:none;
+    display:flex;
+}
+
+.navbar li{
+    margin-right:20px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+}
+
+/* Descendant Selector */
+.navbar a{
+    color:yellow;
+    font-weight:bold;
+}
+
+.content{
+    padding:30px;
+}
+
+.article p{
+    color:blue;
+}
+
+/* Descendant Selector */
+.article strong{
+    color:red;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="content">
+
+    <div class="article">
+        <h2>CSS Descendant Selector</h2>
+
+        <p>
+            CSS selectors help us style webpages.
+            <strong>This text becomes red.</strong>
+        </p>
+
+        <div>
+            <p>
+                Even this paragraph is blue because it is inside
+                <strong>.article</strong>.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
